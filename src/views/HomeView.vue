@@ -23,6 +23,9 @@
         goToMonPortfolio() {
             this.$router.push('/mon-portfolio');
         },
+        goToLyfe() {
+            this.$router.push('/lyfe');
+        },
     },
     };
 </script>
@@ -115,7 +118,7 @@
           <li class="js">JS</li>
           <li class="php">PHP</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToLyfe">En savoir plus</button>
       </div>
     </div>
     <div class="project project4">

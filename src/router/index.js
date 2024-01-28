@@ -4,9 +4,10 @@ import maisonChrysalideView from '../views/maisonChrysalideView.vue'
 import philipsHueView from '../views/philipsHueView.vue'
 import oberfighterView from '../views/oberfighterView.vue'
 import pingPassionView from '../views/pingPassionView.vue'
-import ecommercePokemonVIew from '../views/ecommercePokemonVIew.vue'
+import ecommercePokemonView from '../views/ecommercePokemonVIew.vue'
 import portfolioArthurView from '../views/portfolioArthurView.vue'
 import monPortfolioView from '../views/monPortfolioView.vue'
+import lyfeView from '../views/lyfeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,8 +39,8 @@ const router = createRouter({
     },
     {
       path: '/ecommerce-pokemon',
-      name: 'ecommercePokemonVIew',
-      component: ecommercePokemonVIew
+      name: 'ecommercePokemonView',
+      component: ecommercePokemonView
     },
     {
       path: '/portfolio-arthur',
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/mon-portfolio',
       name: 'monPortfolioView',
       component: monPortfolioView
+    },
+    {
+      path: '/lyfe',
+      name: 'lyfeView',
+      component: lyfeView
     }
   ]
 })
