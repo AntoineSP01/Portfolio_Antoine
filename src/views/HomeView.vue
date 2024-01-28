@@ -5,6 +5,9 @@
         goToMaisonChrysalide() {
         this.$router.push('/maison-chrysalide');
         },
+        goToPhilipsHue() {
+        this.$router.push('/philips-hue');
+        },
     },
     };
 </script>
@@ -73,7 +76,7 @@
           <li class="html">HTML</li>
           <li class="css">CSS</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToPhilipsHue">En savoir plus</button>
       </div>
     </div>
 
