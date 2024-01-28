@@ -19,7 +19,7 @@
 
         <h2>Galeries</h2>
         <p>Explorez quelques captures d'écran du site Philips Hue, soigneusement élaboré par mes soins.</p>
-        <figure>
+        <!--<figure>
             <img src="../assets/Images/pingPassion_Accueil.png" alt="">
             <figcaption>Page d'accueil du site Ping Passion</figcaption>
         </figure>
@@ -30,7 +30,7 @@
         <figure>
             <img src="../assets/Images/pingPassion_bois.png" alt="">
             <figcaption>Page qui regroupe tous les type de bois disponibles sur le site</figcaption>
-        </figure>
+        </figure>-->
 
 
     </section>
