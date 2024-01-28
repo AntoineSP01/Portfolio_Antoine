@@ -29,9 +29,13 @@
 
   --font-size-mainTitle: 90px;
   --font-size-subTitle: 60px;
+  --font-size-subTitleMedium: 50px;
   --font-size-subTitleSmall: 35px;
+  --font-size-subTitleLittleSmall: 30px;
   --font-size-nav: 40px;
   --font-size-text: 30px;
   --font-size-text-medium: 23px;
   --font-size-text-small: 20px;
+  --font-size-text-littleSmall: 17px;
+  --font-size-text-verySmall: 15px;
 }
