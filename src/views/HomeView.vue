@@ -14,6 +14,9 @@
         goToPingPassion() {
             this.$router.push('/ping-passion');
         },
+        goToEcomercePokemon() {
+            this.$router.push('/ecommerce-pokemon');
+        },
     },
     };
 </script>
@@ -164,7 +167,7 @@
           <li class="css">CSS</li>
           <li class="js">JS</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToEcomercePokemon">En savoir plus</button>
       </div>
     </div>
   </div>
