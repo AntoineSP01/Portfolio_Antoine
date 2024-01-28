@@ -20,6 +20,9 @@
         goToPortfolioArthur() {
             this.$router.push('/portfolio-arthur');
         },
+        goToMonPortfolio() {
+            this.$router.push('/mon-portfolio');
+        },
     },
     };
 </script>
@@ -158,7 +161,7 @@
           <li class="js">JS</li>
           <li class="vuejs">VueJs</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToMonPortfolio">En savoir plus</button>
       </div>
     </div>
     <div class="project project8">
