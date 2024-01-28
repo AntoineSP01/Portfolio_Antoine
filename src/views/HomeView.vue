@@ -3,10 +3,13 @@
     name: 'HomeView',
     methods: {
         goToMaisonChrysalide() {
-        this.$router.push('/maison-chrysalide');
+            this.$router.push('/maison-chrysalide');
         },
         goToPhilipsHue() {
-        this.$router.push('/philips-hue');
+            this.$router.push('/philips-hue');
+        },
+        goToOberfighter() {
+            this.$router.push('/oberfighter');
         },
     },
     };
@@ -123,7 +126,7 @@
           <li class="html">HTML</li>
           <li class="css">CSS</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToOberfighter">En savoir plus</button>
       </div>
     </div>
     <div class="project project6">

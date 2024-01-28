@@ -18,7 +18,7 @@
         </p>
 
         <h2>Galeries</h2>
-        <p>Découvrez quelques vidéos extraites du site que notre équipe a créé. Actuellement, nous sommes dans l'attente pour savoir si notre projet a été sélectionné.</p>
+        <p>Explorez quelques captures d'écran du site Philips Hue, soigneusement élaboré par mes soins.</p>
         <figure>
             <img src="../assets/Images/philipsHue_Accueil.png" alt="">
             <figcaption>Page d'accueil du site Philips Hue</figcaption>
