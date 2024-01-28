@@ -1,0 +1,37 @@
+@import url('https://fonts.google.com/specimen/Fira+Code');
+
+:root {
+  --color-white: #FFFFFF;
+  --color-black: #393939;
+
+  --text-color-lightTheme: var(--color-black);
+  --text-color-darkTheme: var(--color-white);
+  --text-color-orange: #FFB636;
+
+  --background-color-lightTheme: #D9D9D9;
+  --background-color-darkTheme: #393939;
+  --background-color-cardProjet: #F5F5F5;
+
+  --background-color-text-lightTheme: #FFFFFF;
+  --background-color-text-darkTheme: #202020;
+
+
+  /* Color for gradient */
+  --couleur-debut: #D954AA; 
+  --couleur-fin: #FF6573; 
+
+  --font-family: 'Fira Code', monospace;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semiBold: 600;
+  --font-weight-bold: 700;
+
+  --font-size-mainTitle: 90px;
+  --font-size-subTitle: 60px;
+  --font-size-subTitleSmall: 35px;
+  --font-size-nav: 40px;
+  --font-size-text: 30px;
+  --font-size-text-medium: 23px;
+  --font-size-text-small: 20px;
+}
