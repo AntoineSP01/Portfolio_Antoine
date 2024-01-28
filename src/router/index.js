@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import maisonChrysalideView from '../views/maisonChrysalideView.vue'
 import philipsHueView from '../views/philipsHueView.vue'
 import oberfighterView from '../views/oberfighterView.vue'
+import pingPassionView from '../views/pingPassionView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/oberfighter',
       name: 'oberfighterView',
       component: oberfighterView
+    },
+    {
+      path: '/ping-passion',
+      name: 'pingPassionView',
+      component: pingPassionView
     }
   ]
 })

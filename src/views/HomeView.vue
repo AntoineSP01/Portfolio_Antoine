@@ -11,6 +11,9 @@
         goToOberfighter() {
             this.$router.push('/oberfighter');
         },
+        goToPingPassion() {
+            this.$router.push('/ping-passion');
+        },
     },
     };
 </script>
@@ -136,7 +139,7 @@
         <ul>
           <li class="wordpress">Wordpress</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToPingPassion">En savoir plus</button>
       </div>
     </div>
     <div class="project project7">
