@@ -5,6 +5,7 @@ import philipsHueView from '../views/philipsHueView.vue'
 import oberfighterView from '../views/oberfighterView.vue'
 import pingPassionView from '../views/pingPassionView.vue'
 import ecommercePokemonVIew from '../views/ecommercePokemonVIew.vue'
+import portfolioArthurView from '../views/portfolioArthurView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -38,6 +39,11 @@ const router = createRouter({
       path: '/ecommerce-pokemon',
       name: 'ecommercePokemonVIew',
       component: ecommercePokemonVIew
+    },
+    {
+      path: '/portfolio-arthur',
+      name: 'portfolioArthurView',
+      component: portfolioArthurView
     }
   ]
 })

@@ -17,6 +17,9 @@
         goToEcomercePokemon() {
             this.$router.push('/ecommerce-pokemon');
         },
+        goToPortfolioArthur() {
+            this.$router.push('/portfolio-arthur');
+        },
     },
     };
 </script>
@@ -121,7 +124,7 @@
           <li class="css">CSS</li>
           <li class="js">JS</li>
         </ul>
-        <button>En savoir plus</button>
+        <button @click="goToPortfolioArthur">En savoir plus</button>
       </div>
     </div>
     <div class="project project5">
