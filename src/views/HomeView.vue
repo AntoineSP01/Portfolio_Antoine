@@ -41,21 +41,25 @@
     </div>
   </section>
 
+  <section class="description">
+    <p class="description-text">Je m'appelle Antoine <span>Schmerber-Perraud</span>, je suis étudiant et j’aimerais me spécialiser dans la conception de sites web, en visant à créer des interfaces simples et attrayantes.</p>
+  </section>
+
   <section class="experience">
     <h2 class="title">Expériences</h2>
     <div class="timeline">
       <div class="timeline-dot timeline-dot-top"></div>
       <div class="container left">
-        <div class="date">26/01/2024</div>
+        <div class="date">18/01/2024 - 04/04/2024</div>
         <div class="content">
           <h2>Expert en développement web</h2>
           <p>
-            En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
+            En tant qu'expert en développement web pour la deuxième BAP, j'ai mené avec succès la conception et la mise en œuvre des solutions techniques. Cette expérience m'a permis d'améliorer mes compétences en programmation, en analyse et en résolution de problèmes, renforçant ainsi ma passion pour ce domaine.
           </p>
         </div>
       </div>
       <div class="container right">
-        <div class="date">26/01/2024</div>
+        <div class="date">12/10/2023 - 22/12/2023</div>
         <div class="content">
           <img class="books" src="../../src/assets/Icons/books.svg" alt="">
           <h2>Chef de projet</h2>
@@ -65,7 +69,7 @@
         </div>
       </div>
       <div class="container left">
-        <div class="date">26/01/2024
+        <div class="date">12/10/2023 - 22/12/2023
           <img class="persoOrdi" src="../../src/assets/Icons/persoOrdi.svg" alt="">
         </div>
         <div class="content">
@@ -78,108 +82,134 @@
       </div>
       <div class="timeline-dot timeline-dot-bottom"></div>
     </div>
-    
   </section>
+
+  <section class=" experience-responsive">
+    <div class="experience-reponsive-content">
+      <h2 class="experience-reponsive-title">Expert en développement web</h2>
+      <p class="experience-reponsive-text">En tant qu'expert en développement web pour la deuxième BAP, j'ai mené avec succès la conception et la mise en œuvre des solutions techniques. Cette expérience m'a permis d'améliorer mes compétences en programmation, en analyse et en résolution de problèmes, renforçant ainsi ma passion pour ce domaine.
+        <br>
+        <span>18/01/2024 - 04/04/2024</span>
+      </p>
+    </div>
+
+    <div class="experience-reponsive-content">
+      <h2 class="experience-reponsive-title">Chef de projet</h2>
+      <p class="experience-reponsive-text">En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
+        <br>
+        <span>12/10/2023 - 22/12/2023</span>
+      </p>
+    </div>
+
+    <div class="experience-reponsive-content">
+      <h2 class="experience-reponsive-title">Bah je sais pas</h2>
+      <p class="experience-reponsive-text">En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
+        <br>
+        <span>12/10/2023 - 22/12/2023</span>
+      </p>
+    </div>
+  </section>
+
+
 
   <section class="projets">
     <h2 class="title">Projets</h2>
 
     <div class="flex-container">
+      <div class="project project1">
+        <img src="../../src/assets/Images/hue.png" alt="">
+        <div class="content">
+          <h2>Philips Hue</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <button @click="goToPhilipsHue">En savoir plus</button>
+        </div>
+      </div>
 
-    <div class="project project1">
-      <img src="../../src/assets/Images/hue.png" alt="">
-      <div class="content">
-        <h2>Philips Hue</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-        </ul>
-        <button @click="goToPhilipsHue">En savoir plus</button>
+      <div class="project project2">
+        <img src="../../src/assets/Images/maisonChrysalide.png" alt="">
+        <div class="content">
+          <h2>Maison Chrysalide</h2>
+          <ul>
+            <li class="wordpress">Wordpress</li>
+          </ul>
+          <button @click="goToMaisonChrysalide">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project3">
+        <img src="../../src/assets/Images/lyfe.png" alt="">
+        <div class="content">
+          <h2>Lyfe</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="php">PHP</li>
+          </ul>
+          <button @click="goToLyfe">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project4">
+        <img src="../../src/assets/Images/portfolio_arthur.svg" alt="">
+        <div class="content">
+          <h2>Portfolio Arthur</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+          </ul>
+          <button @click="goToPortfolioArthur">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project5">
+        <img src="../../src/assets/Images/oberfighter.png" alt="">
+        <div class="content">
+          <h2>Oberfighter</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+          </ul>
+          <button @click="goToOberfighter">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project6">
+        <img src="../../src/assets/Images/pingPassion.png" alt="">
+        <div class="content">
+          <h2>PingPassion</h2>
+          <ul>
+            <li class="wordpress">Wordpress</li>
+          </ul>
+          <button @click="goToPingPassion">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project7">
+        <img src="../../src/assets/Icons/logo_black.svg" alt="">
+        <div class="content">
+          <h2>Mon portfolio</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+            <li class="vuejs">VueJs</li>
+          </ul>
+          <button @click="goToMonPortfolio">En savoir plus</button>
+        </div>
+      </div>
+      <div class="project project8">
+        <img src="../../src/assets/Images/eCommercePokemon.png" alt="">
+        <div class="content">
+          <h2>E-commerce Pokémon</h2>
+          <ul>
+            <li class="html">HTML</li>
+            <li class="css">CSS</li>
+            <li class="js">JS</li>
+          </ul>
+          <button @click="goToEcomercePokemon">En savoir plus</button>
+        </div>
       </div>
     </div>
-
-    <div class="project project2">
-      <img src="../../src/assets/Images/maisonChrysalide.png" alt="">
-      <div class="content">
-        <h2>Maison Chrysalide</h2>
-        <ul>
-          <li class="wordpress">Wordpress</li>
-        </ul>
-        <button @click="goToMaisonChrysalide">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project3">
-      <img src="../../src/assets/Images/lyfe.png" alt="">
-      <div class="content">
-        <h2>Lyfe</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="js">JS</li>
-          <li class="php">PHP</li>
-        </ul>
-        <button @click="goToLyfe">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project4">
-      <img src="../../src/assets/Images/portfolio_arthur.svg" alt="">
-      <div class="content">
-        <h2>Portfolio Arthur</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="js">JS</li>
-        </ul>
-        <button @click="goToPortfolioArthur">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project5">
-      <img src="../../src/assets/Images/oberfighter.png" alt="">
-      <div class="content">
-        <h2>Oberfighter</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-        </ul>
-        <button @click="goToOberfighter">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project6">
-      <img src="../../src/assets/Images/pingPassion.png" alt="">
-      <div class="content">
-        <h2>PingPassion</h2>
-        <ul>
-          <li class="wordpress">Wordpress</li>
-        </ul>
-        <button @click="goToPingPassion">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project7">
-      <img src="../../src/assets/Icons/logo_black.svg" alt="">
-      <div class="content">
-        <h2>Mon portfolio</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="js">JS</li>
-          <li class="vuejs">VueJs</li>
-        </ul>
-        <button @click="goToMonPortfolio">En savoir plus</button>
-      </div>
-    </div>
-    <div class="project project8">
-      <img src="../../src/assets/Images/eCommercePokemon.png" alt="">
-      <div class="content">
-        <h2>E-commerce Pokémon</h2>
-        <ul>
-          <li class="html">HTML</li>
-          <li class="css">CSS</li>
-          <li class="js">JS</li>
-        </ul>
-        <button @click="goToEcomercePokemon">En savoir plus</button>
-      </div>
-    </div>
-  </div>
   </section>
 
 </template>
@@ -198,10 +228,26 @@
     width: 100%;
     height: 110vh;
     z-index: -1;
+
+    @media screen and (max-width: 1427px){
+      background-size:contain;
+    }
+
+    @media screen and (max-width: 846px){
+      top: 0;
+    }
   }
 
   .principal-container-content {
     width: 55%;
+
+    @media screen and (max-width: 600px){
+      width: 65%;
+    }
+
+    @media screen and (max-width: 360px){
+      width: 100%;
+    }
   }
   .principal-container-title {
     font-size: var(--font-size-mainTitle);
@@ -209,6 +255,40 @@
     margin-top: 30vh;
     margin-left: 80px;
     text-transform: uppercase;
+
+    @media screen and (max-width: 1300px){
+      font-size: var(--font-size-mainTitleMedium);
+      margin-top: 20vh;
+    }
+
+    @media screen and (max-width: 1000px){
+      font-size: var(--font-size-mainTitleSmall);
+    }
+
+    @media screen and (max-width: 846px){
+      margin-top: 10vh;
+    }
+
+    @media screen and (max-width: 730px){
+      font-size: var(--font-size-mainTitleLittleSmall);
+      margin-top: 0;
+      margin-left: 30px;
+    }
+
+    @media screen and (max-width: 600px){
+      margin-top: 10vh;
+      font-size: var(--font-size-mainTitleVerySmall);
+    }
+
+    @media screen and (max-width: 360px){
+      font-size: var(--font-size-mainTitleLittleVerySmall);
+      margin-top: 10px;
+      margin-left: 0;
+      text-align: center;
+      background-color: rgba(0 , 0, 0, 0.5);
+      border-radius: 10px;
+
+    }
   }
 
   .principal-container-text {
@@ -216,6 +296,27 @@
     color: var(--text-color-darkTheme);
     margin-top: 30px;
     margin-left: 80px; 
+
+    @media screen and (max-width: 1300px){
+      font-size: var(--font-size-text-medium);
+    }
+
+    @media screen and (max-width: 1000px){
+      font-size: var(--font-size-text-small);
+    }
+
+    @media screen and (max-width: 730px){
+      font-size: var(--font-size-text-littleSmall);
+      margin-left: 30px;
+      background-color: rgba(0 , 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 600px){
+      display: none;
+      
+    }
   }
   span {
     color: transparent;
@@ -228,6 +329,31 @@
 
 }
 
+.description {
+  display: none;
+
+  @media screen and (max-width: 600px){
+    display: block;
+    margin-top: 65%;
+    padding-inline: 20px;
+    text-align: center;
+    background-color: var(--background-color-text-darkTheme);
+    border-radius: 10px;
+  }
+
+  .description-text {
+    font-size: var(--font-size-text-medium);
+
+    @media screen and (max-width: 450px){
+      font-size: var(--font-size-text-small);
+    }
+
+    @media screen and (max-width: 360px){
+      font-size: var(--font-size-text-littleSmall);
+    }
+  }
+}
+
 .experience {
   display: flex;
   justify-content: center;
@@ -236,6 +362,24 @@
   margin-top: 100vh;
   margin-bottom: 10vh;
 
+  @media screen and (max-width: 1575px){
+    margin-top: 55%;
+  }
+
+  @media screen and (max-width: 1350px){
+    margin-top: 50%;
+  }
+
+  @media screen and (max-width: 847px){
+    margin-top: 60%;
+    margin-bottom: 4vh;
+  }
+
+  @media screen and (max-width: 600px){
+    margin-top: 10%;
+    
+  }
+  
   .title {
     display: flex;
     justify-content: center;
@@ -245,12 +389,33 @@
     font-size: var(--font-size-subTitle);
     background-color: var(--background-color-text-darkTheme);
     margin-bottom: 100px;
+
+    @media screen and (max-width: 1100px){
+        font-size: var(--font-size-subTitleMedium);
+    }
+
+    @media screen and (max-width: 1000px){
+        margin-bottom: 0;
+    }
+
+    @media screen and (max-width: 850px){
+        font-size: var(--font-size-subTitleSmall);
+        height: 10vh;
+    }
+
+    @media screen and (max-width: 666px){
+        font-size: var(--font-size-subTitleVerySmall);
+    }
   }
 
   .timeline {
     position: relative;
     width: 100%;
     padding: 15px 0;
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
   }
 
   .timeline::after {
@@ -262,6 +427,7 @@
     bottom: -150px;
     left: 50%;
     margin-left: -4px;
+
   }
 
   .timeline-dot {
@@ -317,7 +483,7 @@
   .container .date {
     position: absolute;
     display: inline-block;
-    top: 44%;
+    top: 46%;
     text-align: center;
     font-size: var(--font-size-text-medium);
     font-weight: bold;
@@ -325,14 +491,27 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     z-index: 1;
+
+    @media screen and (max-width: 1250px){
+        font-size: var(--font-size-text-small);
+        top: 47%;
+    }
   }
 
   .container.left .date {
-    right: -300px;
+    right: -400px;
+
+    @media screen and (max-width: 1250px){
+        right: -350px;
+    }
   }
 
   .container.right .date {
-    left: -300px;
+    left: -400px;
+
+    @media screen and (max-width: 1250px){
+        left: -350px;
+    }
   }
 
   .container .content {
@@ -357,12 +536,28 @@
     font-size: var(--font-size-subTitleSmall);
     font-weight: normal;
     color: var(--text-color-orange);
+
+    @media screen and (max-width: 1250px){
+        font-size: var(--font-size-text-subTitleLittleSmall);
+    }
+
+    @media screen and (max-width: 666px){
+        font-size: var(--font-size-text-subTitleVerySmall);
+    }
   }
 
   .container .content p {
     margin: 0;
     font-size: var(--font-size-text-small);
     color: #000000;
+
+    @media screen and (max-width: 1250px){
+        font-size: var(--font-size-text-littleSmall);
+    }
+
+    @media screen and (max-width: 666px){
+        font-size: var(--font-size-text-verySmall);
+    }
   }
 
   .books {
@@ -377,59 +572,109 @@
     top: -50%;
     left: 20px;
     width: 25%;
+
+    @media screen and (max-width: 1612px){
+        top: -42%;
+    }
+
+    @media screen and (max-width: 1472px){
+        top: -35%;
+    }
+
+    @media screen and (max-width: 1350px){
+        top: -30%;
+    }
+
+    @media screen and (max-width: 1250px){
+        
+    }
+
+    @media screen and (max-width: 1150px){
+        top: -25%;
+    }
+
+    @media screen and (max-width: 1050px){
+        top: -20%;
+    }
   }
 
   .persoOrdi {
     position: absolute;
     bottom: -500px;
-    left: 150px;
-    width: 300%;
-  }
+    left: 200px;
+    width: 125%;
 
-  @media (max-width: 767.98px) {
-    .timeline::after {
-      left: 90px;
-    }
-
-    .container {
-      width: 100%;
-      padding-left: 120px;
-      padding-right: 30px;
-    }
-
-    .container.right {
-      left: 0%;
-    }
-
-    .container.left::after, 
-    .container.right::after {
-      left: 82px;
-    }
-
-    .container.left::before,
-    .container.right::before {
+    @media screen and (max-width: 1316px){
       left: 100px;
-      border-color: transparent #006E51 transparent transparent;
-    }
-
-    .container.left .date,
-    .container.right .date {
-      right: auto;
-      left: 15px;
-    }
-
-    .container.left .icon,
-    .container.right .icon {
-      right: auto;
-      left: 146px;
-    }
-
-    .container.left .content,
-    .container.right .content {
-      padding: 30px 30px 30px 90px;
-      border-radius: 500px 0 0 500px;
     }
   }
+
+}
+
+.experience-responsive {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 1000px){
+      display: flex;
+    }
+
+    div {
+      margin-bottom: 50px;
+      width: 80%;
+      background-color: rgba(0 , 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 20px;
+
+      @media screen and (max-width: 666px){
+        width: 90%;
+      }
+
+      @media screen and (max-width: 500px){
+        width: 95%;
+      }
+    }
+
+    h2 {
+      font-size: var(--font-size-nav);
+      color: var(--text-color-orange);
+      margin-bottom: 20px;
+      text-align: center;
+
+      @media screen and (max-width: 850px){
+        font-size: var(--font-size-navMedium);
+      }
+
+      @media screen and (max-width: 666px){
+        font-size: var(--font-size-navSmall);
+      }
+
+      @media screen and (max-width: 500px){
+        font-size: var(--font-size-navLittleSmall);
+      }
+    }
+
+    p {
+      text-align: justify;
+      font-size: var(--font-size-text-small);
+
+      @media screen and (max-width: 600px){
+          font-size: var(--font-size-text-littleSmall);
+      }
+
+      @media screen and (max-width: 400px){
+          text-align: center;
+          font-size: var(--font-size-text-verySmall);
+      }
+    }
+
+    span {
+      margin-top: 10px;
+      text-align: right;
+      display: block;
+    }
 }
 
 .projets {
@@ -442,13 +687,50 @@
     font-size: var(--font-size-subTitle);
     background-color: var(--background-color-text-darkTheme);
     margin-block: 175px 100px;
+
+    @media screen and (max-width: 1100px){
+        font-size: var(--font-size-subTitleMedium);
+    }
+
+    @media screen and (max-width: 1000px){
+        margin-block: 20px 50px;
+    }
+
+    @media screen and (max-width: 850px){
+        font-size: var(--font-size-subTitleSmall);
+        height: 10vh;
+    }
+
+    @media screen and (max-width: 666px){
+        font-size: var(--font-size-subTitleVerySmall);
+    }
   }
 
   .flex-container {
-    display: flex; /* Utilise Flexbox au lieu de Grid */
-    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne lorsque la largeur est insuffisante */
+    display: flex; 
+    justify-content: center;
+    flex-wrap: wrap; 
     gap: 40px;
     padding-inline: 150px;
+
+    @media screen and (max-width: 1550px){
+      padding-inline: 50px;
+    }
+
+    @media screen and (max-width: 1350px){
+      padding-inline: 10px;
+      gap: 20px;
+    }
+
+    @media screen and (max-width: 772px){
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 466px){
+      gap: 0px;
+    }
+    
   }
 
   .project {
@@ -462,6 +744,7 @@
     width: calc(33.33% - 40px); 
     margin-bottom: 40px;
     overflow: hidden; 
+   
   }
 
   button {
@@ -496,10 +779,19 @@
     width: 80px;
     border-radius: 40px;
     margin-top: 10px;
+
+    @media screen and (max-width: 858px){
+      height: 40px;
+      width: 70px;
+    }
   }
 
   .wordpress {
     width: 130px;
+
+    @media screen and (max-width: 858px){
+      width: 100px;
+    }
   }
 
   .html:hover {
@@ -612,6 +904,14 @@
     gap: 10px;
     margin-bottom: 10px;
     font-size: var(--font-size-text-small);
+
+    @media screen and (max-width: 858px){
+      font-size: var(--font-size-text-verySmall);
+    }
+
+    @media screen and (max-width: 466px){
+      gap: 2px;
+    }
   }
 
   .project1,
@@ -621,11 +921,31 @@
   .project7,
   .project8 {
     width: calc(33.33% - 40px);
+
+    @media screen and (max-width: 1350px){
+      width: calc(50% - 40px);
+    }
+
+    @media screen and (max-width: 772px){
+      width: 75%;
+    }
+
+    @media screen and (max-width: 466px){
+      width: 100%;
+    }
   }
 
   .project4,
   .project5 {
     width: calc(50% - 40px);
+
+    @media screen and (max-width: 772px){
+      width: 75%;
+    }
+
+    @media screen and (max-width: 466px){
+      width: 100%;
+    }
   }
 }
 

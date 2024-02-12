@@ -4,10 +4,11 @@ import maisonChrysalideView from '../views/maisonChrysalideView.vue'
 import philipsHueView from '../views/philipsHueView.vue'
 import oberfighterView from '../views/oberfighterView.vue'
 import pingPassionView from '../views/pingPassionView.vue'
-import ecommercePokemonView from '../views/ecommercePokemonVIew.vue'
+import ecommercePokemonView from '../views/ecommercePokemonView.vue'
 import portfolioArthurView from '../views/portfolioArthurView.vue'
 import monPortfolioView from '../views/monPortfolioView.vue'
 import lyfeView from '../views/lyfeView.vue'
+import LoadingPage from '../views/loadingPageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,7 +57,12 @@ const router = createRouter({
       path: '/lyfe',
       name: 'lyfeView',
       component: lyfeView
-    }
+    },
+    {
+      path: '/loading',
+      name: 'Loading',
+      component: LoadingPage, // Ajoutez la nouvelle page aux routes
+    },
   ]
 })
 

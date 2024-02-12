@@ -4,11 +4,14 @@ import { RouterView } from 'vue-router'
 export default {
   name: 'App',
   methods: {
+    created() {
+      this.$router.push('/loading');
+    },
     github() {
       window.open("https://github.com/AntoineSP01", "_blank");
     },
     discord() {
-      window.open("https://discord.com/channels/@me/_toto2001", "_blank");
+      window.open("https://discord.com/users/_toto2001", "_blank");
     },
     linkedin() {
       window.open("https://www.linkedin.com/in/antoineschmerberperraud/", "_blank");
@@ -62,7 +65,7 @@ export default {
   </section>
 
   <section class="footer">
-    <p>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin. Thanks to him for his help. </p>
+    <p>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin.</p>
     <div>
       <span @click="github">Github</span>
       <span @click="discord">Discord</span>
