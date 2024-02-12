@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'pingPassionView'
+}
+</script>
+
 <template>
     <section>
         <h1>Ping Passion</h1>

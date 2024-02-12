@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'lyfeView'
+}
+</script>
+
 <template>
     <section>
         <h1>Lyfe</h1>

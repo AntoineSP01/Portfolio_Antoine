@@ -1,5 +1,6 @@
 <script>
 export default {
+  name: 'loadingPageView',
   data() {
     return {
       progress: 0,

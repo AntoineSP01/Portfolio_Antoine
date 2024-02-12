@@ -1,6 +1,6 @@
 <script>
     export default {
-    name: 'HomeView',
+    name: 'home',
     methods: {
         goToMaisonChrysalide() {
             this.$router.push('/maison-chrysalide');

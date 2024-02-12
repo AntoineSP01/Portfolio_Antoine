@@ -1,3 +1,9 @@
+<script>
+export default {
+    name: 'philipsHueView'
+}
+</script>
+
 <template>
     <section>
         <h1>Philips Hue</h1>

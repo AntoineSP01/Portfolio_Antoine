@@ -8,7 +8,7 @@ import ecommercePokemonView from '../views/ecommercePokemonView.vue'
 import portfolioArthurView from '../views/portfolioArthurView.vue'
 import monPortfolioView from '../views/monPortfolioView.vue'
 import lyfeView from '../views/lyfeView.vue'
-import LoadingPage from '../views/loadingPageView.vue'
+import loadingPageView from '../views/loadingPageView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -60,8 +60,8 @@ const router = createRouter({
     },
     {
       path: '/loading',
-      name: 'Loading',
-      component: LoadingPage, // Ajoutez la nouvelle page aux routes
+      name: 'loadingPageView',
+      component: loadingPageView
     },
   ]
 })
