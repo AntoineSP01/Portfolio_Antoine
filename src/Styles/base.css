@@ -7,12 +7,14 @@
   --text-color-lightTheme: var(--color-black);
   --text-color-darkTheme: var(--color-white);
   --text-color-orange: #FFB636;
+  --text-color-orangeLightTheme: #e29003;
 
-  --background-color-lightTheme: #D9D9D9;
+  --background-color-lightTheme: #f3f3f3;
   --background-color-darkTheme: #393939;
   --background-color-cardProjet: #F5F5F5;
+  --background-color-cardProjetDark: #1f1f1f;
 
-  --background-color-text-lightTheme: #FFFFFF;
+  --background-color-text-lightTheme: #b9b9b9;
   --background-color-text-darkTheme: #202020;
 
 

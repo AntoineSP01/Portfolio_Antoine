@@ -22,6 +22,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
     min-height: 100vh;
     color: var(--text-color-darkTheme);
@@ -30,6 +31,8 @@ body {
     font-family: var(--font-family);
     font-size: 24px;
 }
+
+
 ol, ul {
 	list-style: none;
 }

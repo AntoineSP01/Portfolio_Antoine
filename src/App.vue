@@ -1,12 +1,31 @@
 <script>
 import { RouterView } from 'vue-router'
+import { toggleDayNight } from './stores/themeManager';
+
 
 export default {
   name: 'App',
-  methods: {
-    created() {
-      this.$router.push('/loading');
+  components: {
+    RouterView
+  },
+  data() {
+    return {
+      isDay: false,
+    };
+  },
+  computed: {
+    storedIsDay() {
+      return localStorage.getItem('isDay') === 'true';
     },
+  },
+  watch: {
+    storedIsDay(newVal, oldVal) {
+      if (newVal !== oldVal) {
+        this.toggleDayNight();
+      }
+    },
+  },
+  methods: {
     github() {
       window.open("https://github.com/AntoineSP01", "_blank");
     },
@@ -16,17 +35,24 @@ export default {
     linkedin() {
       window.open("https://www.linkedin.com/in/antoineschmerberperraud/", "_blank");
     },
+    toggleDayNight() {
+      toggleDayNight();
+      this.isDay = localStorage.getItem('isDay') === 'true';
+    },
   },
-};
-</script>
+  mounted() {
+    this.toggleDayNight();
+  },
+}
 
+</script>
 
 <template>
   
   <header>
     <nav>
-      <img class="logo" src="../src/assets/Icons/logo_black.svg" alt="Logo du site">
-      <p>Portfolio</p>
+      <img class="logo" :src="isDay ? '../src/assets/Icons/logo.svg' : '../src/assets/Icons/logo_black.svg'" @click="toggleDayNight"  alt="Logo du site">
+      <router-link to="/"><h2>Portfolio</h2></router-link>
       <ul>
         <li>
           <a href="https://github.com/AntoineSP01" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/github.svg" alt="Logo de Github"></a></li>
@@ -41,7 +67,7 @@ export default {
   <section class="contacts">
     <h2 class="title">Contacts</h2>
     <div class="contacts_content">
-      <img src="../src/assets/Icons/logo_black.svg" alt="">
+      <img :src="isDay ? '../src/assets/Icons/logo.svg' : '../src/assets/Icons/logo_black.svg'" alt="Logo du site" @click="toggleDayNight">
       <p class="txt">N'hésitez pas à me contacter !</p>
       <p class="email"><span>schmerberperraud@gmail.com</span></p>
       <p class="tel"><span>06 18 54 16 80</span></p>
@@ -65,7 +91,7 @@ export default {
   </section>
 
   <section class="footer">
-    <p>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin.</p>
+    <h5>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin.</h5>
     <div>
       <span @click="github">Github</span>
       <span @click="discord">Discord</span>
@@ -73,9 +99,11 @@ export default {
     </div>
   </section>
 
+  <router-view :key="$route.fullPath"></router-view>
 </template>
 
 <style scoped>
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -111,9 +139,10 @@ nav {
     justify-content: center;
   }
 
-  p {
+  h2 {
     font-size: var(--font-size-nav);
     color: var(--text-color-orange);
+    text-decoration: underline var(--text-color-orange);
 
     @media screen and (max-width: 450px){
       font-size: var(--font-size-navMedium);
@@ -124,8 +153,6 @@ nav {
     }
   }
 }
-
-
 
 .contacts {
   background-image: linear-gradient(90deg, var(--couleur-debut), var(--couleur-fin));
@@ -332,7 +359,7 @@ nav {
     gap: 40px;
   }
 
-  p {
+  h5 {
     font-size: var(--font-size-text-small);
     color: var(--text-color-orange);
     width: 40%;

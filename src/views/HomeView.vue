@@ -52,7 +52,7 @@
       <div class="container left">
         <div class="date">18/01/2024 - 04/04/2024</div>
         <div class="content">
-          <h2>Expert en développement web</h2>
+          <h3>Expert en développement web</h3>
           <p>
             En tant qu'expert en développement web pour la deuxième BAP, j'ai mené avec succès la conception et la mise en œuvre des solutions techniques. Cette expérience m'a permis d'améliorer mes compétences en programmation, en analyse et en résolution de problèmes, renforçant ainsi ma passion pour ce domaine.
           </p>
@@ -61,8 +61,8 @@
       <div class="container right">
         <div class="date">12/10/2023 - 22/12/2023</div>
         <div class="content">
-          <img class="books" src="../../src/assets/Icons/books.svg" alt="">
-          <h2>Chef de projet</h2>
+          <img class="books" src="../assets/Icons/books.svg" alt="">
+          <h3>Chef de projet</h3>
           <p>
             En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
           </p>
@@ -70,11 +70,11 @@
       </div>
       <div class="container left">
         <div class="date">12/10/2023 - 22/12/2023
-          <img class="persoOrdi" src="../../src/assets/Icons/persoOrdi.svg" alt="">
+          <img class="persoOrdi" src="../assets/Icons/persoOrdi.svg" alt="">
         </div>
         <div class="content">
-          <img class="cactus" src="../../src/assets/Icons/cactus.svg" alt="">
-          <h2>Bah je sais pas</h2>
+          <img class="cactus" src="../assets/Icons/cactus.svg" alt="">
+          <h3>Bah je sais pas</h3>
           <p>
             En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
           </p>
@@ -117,7 +117,7 @@
 
     <div class="flex-container">
       <div class="project project1">
-        <img src="../../src/assets/Images/hue.png" alt="">
+        <img src="../assets/Images/hue.png" alt="">
         <div class="content">
           <h2>Philips Hue</h2>
           <ul>
@@ -129,7 +129,7 @@
       </div>
 
       <div class="project project2">
-        <img src="../../src/assets/Images/maisonChrysalide.png" alt="">
+        <img src="../assets/Images/maisonChrysalide.png" alt="">
         <div class="content">
           <h2>Maison Chrysalide</h2>
           <ul>
@@ -139,7 +139,7 @@
         </div>
       </div>
       <div class="project project3">
-        <img src="../../src/assets/Images/lyfe.png" alt="">
+        <img src="../assets/Images/lyfe.png" alt="">
         <div class="content">
           <h2>Lyfe</h2>
           <ul>
@@ -152,7 +152,7 @@
         </div>
       </div>
       <div class="project project4">
-        <img src="../../src/assets/Images/portfolio_arthur.svg" alt="">
+        <img src="../assets/Images/portfolio_arthur.svg" alt="">
         <div class="content">
           <h2>Portfolio Arthur</h2>
           <ul>
@@ -164,7 +164,7 @@
         </div>
       </div>
       <div class="project project5">
-        <img src="../../src/assets/Images/oberfighter.png" alt="">
+        <img src="../assets/Images/oberfighter.png" alt="">
         <div class="content">
           <h2>Oberfighter</h2>
           <ul>
@@ -175,7 +175,7 @@
         </div>
       </div>
       <div class="project project6">
-        <img src="../../src/assets/Images/pingPassion.png" alt="">
+        <img src="../assets/Images/pingPassion.png" alt="">
         <div class="content">
           <h2>PingPassion</h2>
           <ul>
@@ -185,7 +185,7 @@
         </div>
       </div>
       <div class="project project7">
-        <img src="../../src/assets/Icons/logo_black.svg" alt="">
+        <img src="..//assets/Icons/logo_black.svg" alt="">
         <div class="content">
           <h2>Mon portfolio</h2>
           <ul>
@@ -198,7 +198,7 @@
         </div>
       </div>
       <div class="project project8">
-        <img src="../../src/assets/Images/eCommercePokemon.png" alt="">
+        <img src="../assets/Images/eCommercePokemon.png" alt="">
         <div class="content">
           <h2>E-commerce Pokémon</h2>
           <ul>
@@ -210,6 +210,8 @@
         </div>
       </div>
     </div>
+
+    
   </section>
 
 </template>
@@ -531,7 +533,7 @@
     margin-left: 17%;
   }
 
-  .container .content h2 {
+  .container .content h3 {
     margin: 0 0 20px 0;
     font-size: var(--font-size-subTitleSmall);
     font-weight: normal;
@@ -735,12 +737,12 @@
 
   .project {
     background-color: var(--background-color-cardProjet);
-    border: 3px solid var(--color-white);
+    border: 5px solid var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 20px;
     width: calc(33.33% - 40px); 
     margin-bottom: 40px;
     overflow: hidden; 

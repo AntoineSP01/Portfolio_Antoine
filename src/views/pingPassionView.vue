@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section class="theme">
         <h1>Ping Passion</h1>
 
         <h2>Qu'est ce que c'est</h2>

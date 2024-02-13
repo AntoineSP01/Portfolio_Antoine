@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <section>
+    <section class="theme">
         <h1>Mon portfolio</h1>
 
         <h2>Pourquoi est-il dans mon portfolio</h2>
