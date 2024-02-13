@@ -222,7 +222,7 @@
     position: absolute;
     top: -10vh;
     left: 0;
-    background-image: url("../src/assets/Images/backgroundAccueil.svg");
+    background-image: url("../assets/Images/backgroundAccueil.svg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
