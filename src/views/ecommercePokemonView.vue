@@ -28,7 +28,7 @@ export default {
         <h2>Galeries</h2>
         <p>Découvrez en détail deux vidéos exclusives présentant l'intégralité du site que j'ai personnellement conçu. Plongez dans une exploration approfondie pour mieux appréhender les fonctionnalités et le design de la plateforme. </p>
 
-        <!--<div class="videos">
+        <div class="videos">
             <figure>
                 <video class="video" loop>
                     <source src="../assets/Videos/ecommercePokemon_Accueil.mp4" type="video/mp4">
@@ -43,7 +43,7 @@ export default {
                 </video>
                 <figcaption>Vidéo qui montre la mise au panier d'un pokemon et la page dédié à un pokémon</figcaption>
             </figure>
-        </div>-->
+        </div>
 
 
     </section>

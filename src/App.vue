@@ -132,7 +132,7 @@ export default {
       <p class="txt">N'hésitez pas à me contacter !</p>
       <p class="email"><span>schmerberperraud@gmail.com</span></p>
       <p class="tel"><span>06 18 54 16 80</span></p>
-      <p class="txt">Ou remplissez ce formulaire, je suis à votre disposition pour plus d’information</p>
+      <p class="txt">Ou remplissez ce formulaire, je suis à votre disposition pour plus d’information.</p>
 
       <form @submit.prevent="submitForm">
       <div>

@@ -25,6 +25,7 @@ function applyLightTheme() {
   applyLightThemeExperienceStyle();
   applyLightThemeContactStyle();
   applyLightThemeProjectStyle();
+  applyLightThemeNavStyle();
 }
 
 function applyDarkTheme() {
@@ -34,6 +35,7 @@ function applyDarkTheme() {
   applyDarkThemeExperienceStyle();
   applyDarkThemeContactStyle();
   applyDarkThemeProjectStyle();
+  applyDarkThemeNavStyle();
 }
 
 function applyLightThemePStyle() {
@@ -41,6 +43,7 @@ function applyLightThemePStyle() {
   const themeElements = document.querySelectorAll('.theme p');
   const h1ThemeElements = document.querySelectorAll('h1');
   const h2ThemeElements = document.querySelectorAll('.theme h2');
+  const h2TitleElements = document.querySelectorAll('.title');
   for (let i = 0; i < pElements.length; i++) {
     pElements[i].style.color = 'var(--text-color-lightTheme)';
   }
@@ -53,6 +56,9 @@ function applyLightThemePStyle() {
   for (let i = 0; i < h2ThemeElements.length; i++) {
     h2ThemeElements[i].style.color = 'var( --text-color-orangeLightTheme)';
   }
+  for (let i = 0; i < h2TitleElements.length; i++) {
+    h2TitleElements[i].style.backgroundColor = 'var(--background-color-darkTheme)';
+  }
 }
 
 function applyDarkThemePStyle() {
@@ -60,6 +66,8 @@ function applyDarkThemePStyle() {
   const themeElements = document.querySelectorAll('.theme p');
   const h1ThemeElements = document.querySelectorAll('h1');
   const h2ThemeElements = document.querySelectorAll('.theme h2');
+  const h2TitleElements = document.querySelectorAll('.title');
+
   for (let i = 0; i < pElements.length; i++) {
     pElements[i].style.color = 'var(--text-color-darkTheme)';
   }
@@ -72,6 +80,24 @@ function applyDarkThemePStyle() {
   for (let i = 0; i < h2ThemeElements.length; i++) {
     h2ThemeElements[i].style.color = 'var(--text-color-orange)';
   }
+  for (let i = 0; i < h2TitleElements.length; i++) {
+    h2TitleElements[i].style.background = 'var(--background-color-text-darkTheme)';
+  }
+}
+
+function applyLightThemeNavStyle() {
+  const Elements = document.querySelectorAll('nav');
+  for (let i = 0; i < Elements.length; i++) {
+    Elements[i].style.background = 'var(--background-color-darkTheme)';
+  }
+}
+
+function applyDarkThemeNavStyle() {
+  const Elements = document.querySelectorAll('nav');
+  for (let i = 0; i < Elements.length; i++) {
+    Elements[i].style.background = 'var(--background-color-text-darkTheme)';
+  }
+
 }
 
 function applyLightThemeExperienceStyle() {

@@ -27,7 +27,8 @@ export default {
 
         <h2>Galeries</h2>
         <p>Découvrez Lyfe à travers ces captures d'écran, bien que le mode sombre ne soit pas présent dans ces images.</p>
-        <!--<figure>
+        
+        <figure>
             <img src="../assets/Images/lyfe_feed.png" alt="">
             <figcaption>Page d'accueil du site Philips Hue</figcaption>
         </figure>
@@ -38,8 +39,7 @@ export default {
         <figure>
             <img src="../assets/Images/lyfe_tweet.png" alt="">
             <figcaption>Page qui regroupe tous les articles disponibles sur le site</figcaption>
-        </figure>-->
-
+        </figure>
 
     </section>
 </template>
