@@ -30,11 +30,11 @@ export default {
             <figcaption>Page d'accueil du site Ping Passion</figcaption>
         </figure>
         <figure>
-            <img src="../assets/Images/pingPassion_revetement.png" alt="">
+            <img src="../assets/Images/pingPassion_Revetement.png" alt="">
             <figcaption>Page d'explication d'un type de revêtement disponible sur site</figcaption>
         </figure>
         <figure>
-            <img src="../assets/Images/pingPassion_bois.png" alt="">
+            <img src="../assets/Images/pingPassion_Bois.png" alt="">
             <figcaption>Page qui regroupe tous les type de bois disponibles sur le site</figcaption>
         </figure>
 
