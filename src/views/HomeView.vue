@@ -26,7 +26,7 @@
         goToLyfe() {
             this.$router.push('/lyfe');
         },
-    },
+      },
     };
 </script>
 
@@ -288,8 +288,6 @@
       margin-left: 0;
       text-align: center;
       background-color: rgba(0 , 0, 0, 0.5);
-      border-radius: 10px;
-
     }
   }
 
@@ -339,8 +337,7 @@
     margin-top: 65%;
     padding-inline: 20px;
     text-align: center;
-    background-color: var(--background-color-text-darkTheme);
-    border-radius: 10px;
+    background-color: rgba(0 , 0, 0, 0.5);
   }
 
   .description-text {
@@ -635,7 +632,8 @@
       }
 
       @media screen and (max-width: 500px){
-        width: 95%;
+        width: 100%;
+        border-radius: 0px;
       }
     }
 
@@ -731,13 +729,14 @@
 
     @media screen and (max-width: 466px){
       gap: 0px;
+      padding: 0;
     }
     
   }
 
   .project {
     background-color: var(--background-color-cardProjet);
-    border: 5px solid var(--color-white);
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -746,7 +745,10 @@
     width: calc(33.33% - 40px); 
     margin-bottom: 40px;
     overflow: hidden; 
-   
+
+    @media screen and (min-width: 466px){
+      border: 5px solid var(--color-white);
+    }
   }
 
   button {
@@ -885,7 +887,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     color: var(--text-color-darkTheme);
     width: 100%;
     background-color: var(--background-color-text-darkTheme);

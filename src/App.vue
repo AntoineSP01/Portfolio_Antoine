@@ -10,6 +10,8 @@ export default {
   },
   data() {
     return {
+      heure: '',
+      date: '',
       isDay: false,
     };
   },
@@ -39,9 +41,31 @@ export default {
       toggleDayNight();
       this.isDay = localStorage.getItem('isDay') === 'true';
     },
+    actualiserHeure() {
+      setInterval(() => {
+        const date = new Date();
+        const joursSemaine = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
+        const mois = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+        
+        const jourSemaine = joursSemaine[date.getDay()];
+        const jourMois = date.getDate();
+        const moisNom = mois[date.getMonth()];
+        const annee = date.getFullYear();
+        const heures = this.formatNombre(date.getHours());
+        const minutes = this.formatNombre(date.getMinutes());
+        const secondes = this.formatNombre(date.getSeconds());
+
+        this.date = `${jourSemaine} ${jourMois} ${moisNom} ${annee}, ${heures}:${minutes}:${secondes}`;
+
+      }, 1000);
+    },
+    formatNombre(nombre) {
+      return nombre < 10 ? '0' + nombre : nombre;
+    }
   },
   mounted() {
     this.toggleDayNight();
+    this.actualiserHeure();
   },
 }
 
@@ -91,7 +115,10 @@ export default {
   </section>
 
   <section class="footer">
-    <h5>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin.</h5>
+    <h5>© 2024 Developped by Antoine Schmerber-Perraud and designed by Arthur Meynieux-Naudin.
+      <br><br>  
+      {{ date }}
+    </h5>
     <div>
       <span @click="github">Github</span>
       <span @click="discord">Discord</span>
@@ -99,7 +126,7 @@ export default {
     </div>
   </section>
 
-  <router-view :key="$route.fullPath"></router-view>
+  
 </template>
 
 <style scoped>
