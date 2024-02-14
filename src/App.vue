@@ -12,7 +12,13 @@ export default {
     return {
       heure: '',
       date: '',
+
       isDay: false,
+
+      prenom: '',
+      nom: '',
+      email: '',
+      message: ''
     };
   },
   computed: {
@@ -61,7 +67,38 @@ export default {
     },
     formatNombre(nombre) {
       return nombre < 10 ? '0' + nombre : nombre;
+    },
+    submitForm() {
+      const data = {
+        to_email: 'schmerberperraud@gmail.com',
+        from_name: this.prenom + ' ' + this.nom,
+        reply_to: this.email,
+        message: this.message
+      };
+
+      Email.send({
+        SecureToken: "ea260c2d-de77-4685-92b1-232217d82122",
+        To: data.to_email,
+        From: "portfolio.contact@schmerberperraud.com",
+        Subject: "Nouveau message de " + data.from_name,
+        Body: "Email : " + data.reply_to + "<br>" + "Message : " + data.message
+      }).then(
+        message => {
+          console.log(message);
+          alert('Votre message a été envoyé avec succès !');
+          this.prenom = '';
+          this.nom = '';
+          this.email = '';
+          this.message = '';
+        }
+      ).catch(
+        error => {
+          console.error(error);
+          alert('Une erreur s\'est produite lors de l\'envoi du message.');
+        }
+      );
     }
+
   },
   mounted() {
     this.toggleDayNight();
@@ -75,7 +112,7 @@ export default {
   
   <header>
     <nav>
-      <img class="logo" :src="isDay ? '../src/assets/Icons/logo.svg' : '../src/assets/Icons/logo_black.svg'" @click="toggleDayNight"  alt="Logo du site">
+      <img class="logo" :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" @click="toggleDayNight"  alt="Logo du site">
       <router-link to="/"><h2>Portfolio</h2></router-link>
       <ul>
         <li>
@@ -91,26 +128,23 @@ export default {
   <section class="contacts">
     <h2 class="title">Contacts</h2>
     <div class="contacts_content">
-      <img :src="isDay ? '../src/assets/Icons/logo.svg' : '../src/assets/Icons/logo_black.svg'" alt="Logo du site" @click="toggleDayNight">
+      <img :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" alt="Logo du site" @click="toggleDayNight">
       <p class="txt">N'hésitez pas à me contacter !</p>
       <p class="email"><span>schmerberperraud@gmail.com</span></p>
       <p class="tel"><span>06 18 54 16 80</span></p>
       <p class="txt">Ou remplissez ce formulaire, je suis à votre disposition pour plus d’information</p>
 
-      <form action="">
-        <div>
-          <input class="prenom" type="text" placeholder="Prénom">
-          <input class="nom" type="text" placeholder="Nom">
-        </div>
-
-        <input class="mail" type="text" placeholder="Votre mail">
-        <textarea class="message" required="" cols="50" rows="10" name="textarea" placeholder=" Votre message"></textarea>
-
-        <div class="submit">
-          <input class="envoyer" type="submit" value="Envoyer">
-        </div>
-        
-      </form>
+      <form @submit.prevent="submitForm">
+      <div>
+        <input v-model="prenom" class="prenom" type="text" placeholder="Prénom">
+        <input v-model="nom" class="nom" type="text" placeholder="Nom">
+      </div>
+      <input v-model="email" class="mail" type="text" placeholder="Votre mail">
+      <textarea v-model="message" class="message" required cols="50" rows="10" name="textarea" placeholder="Votre message"></textarea>
+      <div class="submit">
+        <button type="submit" class="envoyer">Envoyer</button>
+      </div>
+    </form>
     </div>
   </section>
 
