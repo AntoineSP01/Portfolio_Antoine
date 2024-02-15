@@ -26,6 +26,7 @@ function applyLightTheme() {
   applyLightThemeContactStyle();
   applyLightThemeProjectStyle();
   applyLightThemeNavStyle();
+  applyLightThemeVidImgrStyle();
 }
 
 function applyDarkTheme() {
@@ -36,6 +37,7 @@ function applyDarkTheme() {
   applyDarkThemeContactStyle();
   applyDarkThemeProjectStyle();
   applyDarkThemeNavStyle();
+  applyDarkThemeVidImgStyle();
 }
 
 function applyLightThemePStyle() {
@@ -246,5 +248,19 @@ function applyDarkThemeFooterStyle() {
   }
   for (let i = 0; i < spanElements.length; i++) {
     spanElements[i].style.color = 'var(--text-color-orange)';
+  }
+}
+
+function applyLightThemeVidImgrStyle() {
+  const Elements = document.querySelectorAll('figcaption');
+  for (let i = 0; i < Elements.length; i++) {
+    Elements[i].style.color = 'var(--text-color-lightTheme)';
+  }
+}
+
+function applyDarkThemeVidImgStyle() {
+  const Elements = document.querySelectorAll('figcaption');
+  for (let i = 0; i < Elements.length; i++) {
+    Elements[i].style.color = 'var(--text-color-darkTheme)';
   }
 }

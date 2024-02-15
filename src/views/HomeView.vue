@@ -69,14 +69,14 @@
         </div>
       </div>
       <div class="container left">
-        <div class="date">12/10/2023 - 22/12/2023
+        <div class="date">01/07/2023 - 31/08/2023
           <img class="persoOrdi" src="../assets/Icons/persoOrdi.svg" alt="">
         </div>
         <div class="content">
           <img class="cactus" src="../assets/Icons/cactus.svg" alt="">
-          <h3>Bah je sais pas</h3>
+          <h3>Serveur</h3>
           <p>
-            En tant que chef de projet pour l'événement BAP (voir projet Maison Chrysalide), j'ai dirigé avec succès la planification et la coordination des équipes. Cette expérience m'a permis d'affiner mes compétences en gestion de projet, de leadership et de communication, renforçant ma passion pour ce domaine.
+            En tant que serveur, j'ai assuré un accueil chaleureux aux clients, pris leurs commandes avec précision, géré efficacement les imprévus, et organisé la gestion des tables pour offrir un service fluide et satisfaisant, garantissant ainsi une expérience mémorable à chaque visite.
           </p>
         </div>
       </div>

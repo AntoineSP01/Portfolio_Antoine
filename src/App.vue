@@ -115,14 +115,11 @@ export default {
       <img class="logo" :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" @click="toggleDayNight"  alt="Logo du site">
       <router-link to="/"><h2>Portfolio</h2></router-link>
       <ul>
-        <li>
-          <a href="https://github.com/AntoineSP01" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/github.svg" alt="Logo de Github"></a></li>
-        <li><a href="https://discord.com/channels/@me/_toto2001" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/discord.svg" alt="Logo de Discord"></a></li>
+        <li><a href="https://github.com/AntoineSP01" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/github.svg" alt="Logo de Github"></a></li>
         <li><a href="https://www.linkedin.com/in/antoineschmerberperraud/" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/linkedin.svg" alt="Logo de Linkedin"></a></li>
       </ul>
     </nav>
   </header>
-
   <RouterView />
 
   <section class="contacts">
@@ -155,7 +152,6 @@ export default {
     </h5>
     <div>
       <span @click="github">Github</span>
-      <span @click="discord">Discord</span>
       <span @click="linkedin">Linkedin</span>
     </div>
   </section>
@@ -188,6 +184,7 @@ nav {
 
   ul {
     display: flex;
+    align-items: center;
     gap: 20px;
 
     @media screen and (max-width: 668px){
@@ -197,7 +194,6 @@ nav {
 
   li {
     display: flex;
-    justify-content: center;
   }
 
   h2 {
