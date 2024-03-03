@@ -27,7 +27,7 @@ export default {
         <h2>Galeries</h2>
         <p>Découvrez quelques vidéos extraites du site que notre équipe a créé. Actuellement, nous sommes dans l'attente pour savoir si notre projet a été sélectionné.</p>
         <figure>
-            <video loop>
+            <video loop autoplay>
                 <source src="../assets/Videos/Accueil_chrysalide.mp4" type="video/mp4">
                 Votre navigateur ne prend pas en charge la balise vidéo.
             </video>
@@ -36,14 +36,14 @@ export default {
 
         <div class="videos">
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/salleImmersive_chrysalide.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>
                 <figcaption>Page de réservation pour la salle immersive</figcaption>
             </figure>
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/commeMoi_chrysalide.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>

@@ -1,6 +1,6 @@
 <script>
 import { RouterView } from 'vue-router'
-import { toggleDayNight } from './stores/themeManager';
+// import { toggleDayNight } from './stores/themeManager';
 
 
 export default {
@@ -21,18 +21,18 @@ export default {
       message: ''
     };
   },
-  computed: {
-    storedIsDay() {
-      return localStorage.getItem('isDay') === 'true';
-    },
-  },
-  watch: {
-    storedIsDay(newVal, oldVal) {
-      if (newVal !== oldVal) {
-        this.toggleDayNight();
-      }
-    },
-  },
+  // computed: {
+  //   storedIsDay() {
+  //     return localStorage.getItem('isDay') === 'true';
+  //   },
+  // },
+  // watch: {
+  //   storedIsDay(newVal, oldVal) {
+  //     if (newVal !== oldVal) {
+  //       this.toggleDayNight();
+  //     }
+  //   },
+  // },
   methods: {
     github() {
       window.open("https://github.com/AntoineSP01", "_blank");
@@ -43,10 +43,10 @@ export default {
     linkedin() {
       window.open("https://www.linkedin.com/in/antoineschmerberperraud/", "_blank");
     },
-    toggleDayNight() {
-      toggleDayNight();
-      this.isDay = localStorage.getItem('isDay') === 'true';
-    },
+    // toggleDayNight() {
+    //   toggleDayNight();
+    //   this.isDay = localStorage.getItem('isDay') === 'true';
+    // },
     actualiserHeure() {
       setInterval(() => {
         const date = new Date();
@@ -101,7 +101,7 @@ export default {
 
   },
   mounted() {
-    this.toggleDayNight();
+    // this.toggleDayNight();
     this.actualiserHeure();
   },
 }
@@ -112,7 +112,8 @@ export default {
   
   <header>
     <nav>
-      <img class="logo" :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" @click="toggleDayNight"  alt="Logo du site">
+      <!--<img class="logo" :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" @click="toggleDayNight"  alt="Logo du site">-->
+      <img class="logo" src="./assets/Icons/logo_dark.svg" alt="Logo du site">
       <router-link to="/"><h2>Portfolio</h2></router-link>
       <ul>
         <li><a href="https://github.com/AntoineSP01" target="_blank" rel="noopener noreferrer"><img src="../src/assets/Icons/github.svg" alt="Logo de Github"></a></li>
@@ -125,7 +126,8 @@ export default {
   <section class="contacts">
     <h2 class="title">Contacts</h2>
     <div class="contacts_content">
-      <img :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" alt="Logo du site" @click="toggleDayNight">
+      <!--<img :src="isDay ? '../src/assets/Icons/logo-light.svg' : '../src/assets/Icons/logo_dark.svg'" alt="Logo du site" @click="toggleDayNight">-->
+      <img src="./assets/Icons/logo_dark.svg" alt="Logo du site">
       <p class="txt">N'hésitez pas à me contacter !</p>
       <p class="email"><span>schmerberperraud@gmail.com</span></p>
       <p class="tel"><span>06 18 54 16 80</span></p>

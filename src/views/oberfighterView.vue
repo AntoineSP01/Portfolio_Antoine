@@ -24,7 +24,7 @@ export default {
         <h2>Galeries</h2>
         <p>Explorez en profondeur une vidéo exclusive dévoilant l'intégralité du site que j'ai personnellement conçu.</p>
         <figure>
-            <video loop>
+            <video loop autoplay>
                 <source src="../assets/Videos/oberfighter.mp4" type="video/mp4">
                 Votre navigateur ne prend pas en charge la balise vidéo.
             </video>

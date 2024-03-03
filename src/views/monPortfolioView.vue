@@ -25,14 +25,14 @@ export default {
 
         <div class="videos">
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/monPortfolio_darkTheme.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>
                 <figcaption>Page dédié au mockup Ui/Ux du portfolio </figcaption>
             </figure>
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/monPortfolio_darkTheme.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>

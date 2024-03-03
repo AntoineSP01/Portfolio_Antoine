@@ -28,7 +28,7 @@ export default {
         <h2>Galeries</h2>
         <p>Découvrez des vidéos captivantes illustrant les différentes facettes de mon portfolio actuel en développement web. Ces extraits visuels offrent un aperçu dynamique des fonctionnalités et des projets qui composent mon travail en cours.</p>
         <figure>
-            <video loop>
+            <video loop autoplay>
                 <source src="../assets/Videos/porfolioArthur_ux_ui.mp4" type="video/mp4">
                 Votre navigateur ne prend pas en charge la balise vidéo.
             </video>
@@ -37,14 +37,14 @@ export default {
 
         <div class="videos">
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/porfolioArthur_ux_ui.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>
                 <figcaption>Page dédié au mockup Ui/Ux du portfolio </figcaption>
             </figure>
             <figure>
-                <video class="video" loop>
+                <video class="video" loop autoplay>
                     <source src="../assets/Videos/porfolioArthur_ux_ui.mp4" type="video/mp4">
                     Votre navigateur ne prend pas en charge la balise vidéo.
                 </video>
